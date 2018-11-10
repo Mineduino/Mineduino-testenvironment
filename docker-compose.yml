@@ -1,0 +1,15 @@
+version: '3'
+services:
+        broker:
+                image: mineduino/broker 
+                ports:
+                - 1883:1883
+                - 9001:9001
+        clientbutton:
+                image: mineduino/client
+                environment:
+                - TYPE=button
+                - MQTTIP=broker
+                - MQTTPORT=1883
+                - TOPIC=/button
+
