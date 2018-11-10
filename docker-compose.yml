@@ -5,6 +5,13 @@ services:
                 ports:
                 - 1883:1883
                 - 9001:9001
+        clientdht:
+                image: mineduino/client
+                environment:
+                - TYPE=dht12
+                - MQTTIP=broker
+                - MQTTPORT=1883
+                - TOPIC=/temperature
         clientbutton:
                 image: mineduino/client
                 environment:
