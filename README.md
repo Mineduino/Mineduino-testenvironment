@@ -1,6 +1,6 @@
 To use it you need:
 - Docker - https://docs.docker.com/install 
-- docker-compose 
+- docker-compose - https://docs.docker.com/compose/install/
 
 All you need is to execute this command
 ``` docker-compose up -d ```
